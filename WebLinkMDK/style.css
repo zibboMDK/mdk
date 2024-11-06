@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif; /* Font utilizzato nella pagina */
+    display: flex; /* Layout flessibile */
+    flex-direction: column; /* Colonna per il layout */
+    align-items: center; /* Centratura orizzontale */
+    justify-content: center; /* Centratura verticale */
+    height: 100vh; /* Altezza viewport */
+    margin: 0; /* Rimozione margini */
+    overflow: hidden; /* Rimuovere le barre di scorrimento */
+    background: black; /* Sfondo nero per contrasto */
+}
+
+canvas {
+    position: absolute; /* Posizionamento assoluto per il canvas */
+    top: 0;
+    left: 0;
+    width: 100%; /* Larghezza canvas */
+    height: 100%; /* Altezza canvas */
+    z-index: 1; /* Assicura che il canvas sia sotto il contenuto */
+}
+
+/* Font styles */
+.sedgwick-ave-display-regular, .bungee-spice-regular {
+    color: #ffffff; /* Colore del testo */
+}
+
+/* Imposta il colore del testo per la pagina Contatti */
+.container p {
+    color: #ffffff; /* Colore del testo bianco per i paragrafi */
+}
+
+.container h1 {
+    color: #ffffff; /* Colore del titolo in bianco */
+}
+
+/* Contenitore principale */
+.container {
+    text-align: center; /* Testo centrato */
+    background: rgba(255, 255, 255, 0.1); /* Sfondo bianco semi-trasparente */
+    padding: 20px; /* Padding interno */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra per profondità */
+    position: relative; /* Posizionamento relativo */
+    z-index: 2; /* Assicura che il contenuto sia sopra il canvas */
+}
+
+/* Pulsanti */
+.button {
+    font-family: "Archivo Black", sans-serif;
+    display: inline-flex; /* Layout flessibile per le icone e il testo */
+    align-items: center; /* Allineamento centrale */
+    justify-content: center; /* Allineamento centrale */
+    margin: 10px; /* Margine */
+    padding: 20px 60px; /* Aumento del padding interno per rendere i bottoni più grandi */
+    background-color: #ff7700; /* Colore di sfondo del pulsante */
+    color: black; /* Colore del testo */
+    text-decoration: none; /* Rimozione della sottolineatura */
+    border-radius: 5px; /* Angoli arrotondati */
+    font-size: 18px; /* Dimensione del font */
+    transition: background-color 0.3s, color 0.3s; /* Transizione per effetto hover */
+}
+
+/* Pulsanti di Instagram */
+.button.instagram {
+    background-color: violet; /* Colore viola per i bottoni di Instagram */
+}
+
+/* Pulsanti al passaggio del mouse */
+.button:hover,
+.button.instagram:hover {
+    color: white; /* Colore del testo al passaggio del mouse */
+    background-color: #000000; /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Pulsante di contatto con colore diverso */
+.contact-button {
+    background-color: #28a745; /* Colore diverso per il pulsante di contatto */
+}
+
+.contact-button:hover {
+    background-color: #000000; /* Colore di sfondo al passaggio del mouse */
+    color: white; /* Colore del testo al passaggio del mouse per il pulsante di contatto */
+}
+
+/* Separare l'icona dal testo */
+.button i {
+    margin-right: 10px; /* Aggiunta di margine a destra per separare l'icona dal testo */
+}
